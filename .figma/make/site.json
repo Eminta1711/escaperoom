@@ -1,0 +1,10 @@
+{
+  "description": "Experience thrilling escape rooms, unforgettable birthday parties, and engaging corporate events in Bangalore, designed for teamwork and fun.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
