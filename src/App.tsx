@@ -1,8 +1,8 @@
-import { useState } from "react"
+﻿import { useState } from "react"
 
 type IconName = "arrow" | "phone" | "menu" | "close" | "star" | "users" | "party" | "briefcase"
 
-function Icon({ name, size = 22 }: { name: IconName size?: number }) {
+function Icon({ name, size = 22 }: { name: IconName; size?: number }) {
   const paths: Record<IconName, React.ReactNode> = {
     arrow: (
       <>
@@ -122,7 +122,7 @@ const locations = [
 
 const faqs = [
   [
-    "What can you do at Breakout®?",
+    "What can you do at BreakoutÂ®?",
     "Step into cinematic escape rooms, host an unforgettable celebration, or put your team through immersive challenges built around wit, nerve and collaboration.",
   ],
   [
@@ -130,16 +130,16 @@ const faqs = [
     "Every room has its own intensity. Some are eerie and atmospheric, others lean into mystery and adventure. Our team can help you choose the right level for your group.",
   ],
   [
-    "Are Breakout® escape rooms suitable for groups?",
-    "Absolutely. The experience is designed for groups to solve clues, uncover secrets and race the clock together. No special skills are needed—only curiosity and teamwork.",
+    "Are BreakoutÂ® escape rooms suitable for groups?",
+    "Absolutely. The experience is designed for groups to solve clues, uncover secrets and race the clock together. No special skills are neededâ€”only curiosity and teamwork.",
   ],
   [
-    "Does Breakout® offer corporate team building?",
+    "Does BreakoutÂ® offer corporate team building?",
     "Yes. Our corporate programs turn communication and problem-solving into a high-energy shared story your team will talk about long after the clock stops.",
   ],
   [
-    "Is Breakout® a good option for birthday parties?",
-    "Yes. We build immersive birthday experiences for kids, teens and adults—an unforgettable alternative to the usual cake-and-dinner routine.",
+    "Is BreakoutÂ® a good option for birthday parties?",
+    "Yes. We build immersive birthday experiences for kids, teens and adultsâ€”an unforgettable alternative to the usual cake-and-dinner routine.",
   ],
 ]
 
@@ -153,7 +153,7 @@ function App() {
         <a className="brand" href="#top" aria-label="Breakout home">
           <span className="brand-mark">B</span>
           <span>
-            BREAKOUT<sup>®</sup>
+            BREAKOUT<sup>Â®</sup>
           </span>
         </a>
         <div className={`nav-links ${menuOpen ? "is-open" : ""}`}>
@@ -258,7 +258,7 @@ function App() {
       <section className="manifesto section">
         <p className="kicker">This is not a game night</p>
         <p className="manifesto-copy">
-          At Breakout®, you don't just watch the story.{" "}
+          At BreakoutÂ®, you don't just watch the story.{" "}
           <strong>You step inside it.</strong> Decode the impossible in
           cinematic escape rooms, celebrate milestones in another world, and
           turn teams into legends.
@@ -370,7 +370,7 @@ function App() {
                   <small>0{index + 1}</small>
                   {question}
                 </span>
-                <i>{openFaq === index ? "−" : "+"}</i>
+                <i>{openFaq === index ? "âˆ’" : "+"}</i>
               </button>
               <div className="faq-answer">
                 <p>{answer}</p>
@@ -402,7 +402,7 @@ function App() {
             <a className="brand" href="#top">
               <span className="brand-mark">B</span>
               <span>
-                BREAKOUT<sup>®</sup>
+                BREAKOUT<sup>Â®</sup>
               </span>
             </a>
             <p>Set yourself free.</p>
@@ -430,8 +430,8 @@ function App() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 Breakout. All rights reserved.</span>
-          <span>Privacy · Terms · Refunds</span>
+          <span>Â© 2026 Breakout. All rights reserved.</span>
+          <span>Privacy Â· Terms Â· Refunds</span>
         </div>
       </footer>
     </main>
@@ -439,3 +439,4 @@ function App() {
 }
 
 export default App
+
